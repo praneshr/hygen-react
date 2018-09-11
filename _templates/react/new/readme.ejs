@@ -1,7 +1,7 @@
 ---
-to: app/<%= section %>/<%= name %>/README.md
+to: app/<%= h. inflection.dasherize(section.toLowerCase()) %>/<%= h. inflection.dasherize(name.toLowerCase()) %>/README.md
 ---
-# <%= Name %>
+# <%= h.capitalize(Name) %>
 
 Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.
 

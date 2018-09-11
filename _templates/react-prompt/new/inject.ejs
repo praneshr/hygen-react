@@ -1,0 +1,7 @@
+---
+inject: true
+to: app/<%= h.inflection.dasherize(section.toLowerCase()) %>/index.js
+append: true
+skip_if: './<%= h.inflection.dasherize(name.toLowerCase()) %>/index.jsx'
+---
+export * from './<%= h.inflection.dasherize(name.toLowerCase()) %>/index.jsx'

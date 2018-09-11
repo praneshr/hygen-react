@@ -1,0 +1,17 @@
+---
+to: app/<%= h.inflection.dasherize(section.toLowerCase()) %>/<%= h.inflection.dasherize(name.toLowerCase()) %>/index.jsx
+---
+<% ComponentClassName = h.inflection.camelize(name.split('-').join('_').split(' ').join('_')) -%>
+<% if(locals.lazy) { -%>
+import Loadable from 'react-loadable'
+<% } else {-%>
+export { default as <%= Name %> } from './component.jsx'
+<%}-%>
+<% if(locals.lazy) { -%>
+
+const <%= ComponentClassName %> = Loadable({
+  loader: () => import(/* webpackChunkName: "<%= h.inflection.dasherize(name.toLowerCase()) %>-chunk" */ './component.jsx')
+})
+
+export { <%= ComponentClassName %> }
+<% } -%>

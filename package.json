@@ -4,7 +4,7 @@
   "description": "Hygen template for project using React, Redux and Emotion",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "nodemon --watch _templates/react/new --exec 'cp -r _templates/react/new/*.ejs _templates/react-prompt/new' -e ejs"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
   "homepage": "https://github.com/praneshr/hygen-react#readme",
   "devDependencies": {
     "hygen": "^1.6.2"
+  },
+  "dependencies": {
+    "nodemon": "^1.18.4"
   }
 }
