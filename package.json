@@ -1,31 +1,31 @@
 {
   "name": "hygen-react",
   "version": "0.1.0",
-  "description": "Hygen template for project using React, Redux and Emotion",
-  "main": "index.js",
-  "scripts": {
-    "build": "nodemon --watch _templates/react/new --exec 'cp -r _templates/react/new/*.ejs _templates/react-prompt/new' -e ejs"
+  "description": "Hygen templates for project using React, Redux and Emotion",
+  "keywords": [
+    "code-generator",
+    "hygen",
+    "react",
+    "template"
+  ],
+  "homepage": "https://github.com/praneshr/hygen-react#readme",
+  "bugs": {
+    "url": "https://github.com/praneshr/hygen-react/issues"
   },
+  "license": "MIT",
+  "author": "Pranesh Ravi <praneshpranesh@gmail.com>",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/praneshr/hygen-react.git"
   },
-  "keywords": [
-    "hygen",
-    "react",
-    "template",
-    "code-generator"
-  ],
-  "author": "Pranesh Ravi <praneshpranesh@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/praneshr/hygen-react/issues"
-  },
-  "homepage": "https://github.com/praneshr/hygen-react#readme",
-  "devDependencies": {
-    "hygen": "^1.6.2"
+  "scripts": {
+    "build": "nodemon --watch _templates/react/new --exec 'rm -rf _templates/react-prompt/new/*.ejs && cp -r _templates/react/new/*.ejs _templates/react-prompt/new' -e ejs"
   },
   "dependencies": {
     "nodemon": "^1.18.4"
+  },
+  "peerDependencies": {
+    "hygen": "^1.6.2"
   }
 }
