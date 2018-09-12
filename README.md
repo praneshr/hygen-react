@@ -2,7 +2,7 @@
 
 Hygen packege to ease your React and Redux workflow.
 
-![CLI](https://image.ibb.co/dRiQKp/ezgif_com_video_to_gif_2.gif)
+![CLI](https://image.ibb.co/feuFKp/ezgif_com_video_to_gif_3.gif)
 
 ### Prerequisites
 - [hygen](https://github.com/jondot/hygen)
