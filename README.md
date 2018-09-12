@@ -2,25 +2,25 @@
 
 Hygen packege to ease your React and Redux workflow.
 
-## Prerequisites
+### Prerequisites
 - [hygen](https://github.com/jondot/hygen)
 - [hygen-add](https://github.com/jondot/hygen-add)
 
-## Install
+### Install
 ```bash
 $ hygen-add react
 ```
 This will create a `_template` folder in your project root. This contains all the template files. You should commit and push them with your code. You can also modify the template for your need.
 
-## Usage
+### Usage
 `hygen-react` supports both prompt and basic version of `hygen` generator. Choose whichever fits you.
 
-### 1. With Prompt
+#### 1. With Prompt
 ```bash
 hygen react-prompt new
 ```
 
-### 2. Without Prompt
+#### 2. Without Prompt
 ```bash
 hygen react new <flags>
 
@@ -40,12 +40,12 @@ hygen react new --name footer --section components --lazy --styles scss
 hygen react new --name home --section pages --type stateful --redux --styles scss
 ```
 
-## Things to remember
+### Things to remember
 
 - The generated files are save at `app/<section>/<name>`. Whitespaces in `section` and `name` will be `dasherized` for file/folder names and `camelized` for class/variable names.
 - The generated code uses `class properties` and `decorators`. So, you should include [babel-proposal-class-properties](https://github.com/babel/babel/tree/master/packages/babel-plugin-proposal-class-properties) and [babel-plugin-proposal-decorators](https://github.com/babel/babel/tree/master/packages/babel-plugin-proposal-decorators) in your project
 - The generated code uses [react-lodable](https://github.com/jamiebuilds/react-loadable) to dynamically import components (only when `--lazy` is passed)
 
-## License
+### License
 
 MIT
