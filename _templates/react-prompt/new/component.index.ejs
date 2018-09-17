@@ -5,7 +5,7 @@ to: app/<%= h.inflection.dasherize(section.toLowerCase()) %>/<%= h.inflection.da
 <% if(locals.lazy) { -%>
 import Loadable from 'react-loadable'
 <% } else {-%>
-export { default as <%= Name %> } from './component.jsx'
+export { default as <%= ComponentClassName %> } from './component.jsx'
 <%}-%>
 <% if(locals.lazy) { -%>
 
