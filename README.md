@@ -1,6 +1,6 @@
 # Hygen React
 
-Hygen packege to ease your React and Redux workflow.
+Hygen template package to ease your React and Redux workflow.
 
 ![CLI](https://image.ibb.co/feuFKp/ezgif_com_video_to_gif_3.gif)
 
@@ -44,7 +44,7 @@ hygen react new --name home --section pages --type stateful --redux --styles scs
 
 ### Things to remember
 
-- The generated files are save at `app/<section>/<name>`. Whitespaces in `section` and `name` will be `dasherized` for file/folder names and `camelized` for class/variable names.
+- The generated files are saved at `app/<section>/<name>`. Whitespaces in `section` and `name` will be `dasherized` for file/folder names and `camelized` for class/variable names.
 - The generated code uses `class properties` and `decorators`. So, you should include [babel-proposal-class-properties](https://github.com/babel/babel/tree/master/packages/babel-plugin-proposal-class-properties) and [babel-plugin-proposal-decorators](https://github.com/babel/babel/tree/master/packages/babel-plugin-proposal-decorators) in your project
 - The generated code uses [react-lodable](https://github.com/jamiebuilds/react-loadable) to dynamically import components (only when `--lazy` is passed)
 
