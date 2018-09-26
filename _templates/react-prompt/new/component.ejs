@@ -32,28 +32,28 @@ const mapDispatchToProps = dispatch => ({ })
 <%}-%>
 <% if (locals.type === 'stateful') { -%>
 class <%= ComponentClassName %> extends Component {
-  construstor(props) {
+  constructor(props) {
     super(props)
   }
 
   render = () => {
     return (
-      <div>Edit this component at app/<%= SectionName %>/<%= ComponentName %>/component.js</div>
+      <div>Edit this component at app/<%= SectionName %>/<%= ComponentName %>/component.jsx</div>
     )
   }
 }
 <% } else if (locals.type === 'functional') { -%>
 
-const <%= ComponentClassName %> = props => <div>Edit this component at app/<%= SectionName %>/<%= ComponentName %>/component.js</div>
+const <%= ComponentClassName %> = props => <div>Edit this component at app/<%= SectionName %>/<%= ComponentName %>/component.jsx</div>
 <% } else { -%>
 class <%= ComponentClassName %> extends PureComponent {
-  construstor(props) {
+  constructor(props) {
     super(props)
   }
 
   render = () => {
     return (
-      <div>Edit this component at app/<%= SectionName %>/<%= ComponentName %>/component.js</div>
+      <div>Edit this component at app/<%= SectionName %>/<%= ComponentName %>/component.jsx</div>
     )
   }
 }

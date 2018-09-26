@@ -3,13 +3,13 @@ module.exports = [
     type: 'input',
     name: 'name',
     default: 'component',
-    message: "Name your component"
+    message: "Name of your component"
   },
   {
     type: 'input',
     name: 'section',
     default: 'components',
-    message: "Provide a section under which this component should be created."
+    message: "Section under which your component should be created."
   },
   {
     type: 'list',
@@ -29,7 +29,7 @@ module.exports = [
         value: 'functional',
       },
     ],
-    message: "Choose the type of React component"
+    message: "Choose the type of your component"
   },
   {
     type: 'confirm',
@@ -39,7 +39,7 @@ module.exports = [
   {
     type: 'confirm',
     name: 'lazy',
-    message: "Do you want make the generated component lazy(Async Component)?"
+    message: "Do you want make your component lazy(Async Component)?"
   },
   {
     type: 'list',
