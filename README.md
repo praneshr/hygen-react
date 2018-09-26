@@ -49,7 +49,7 @@ hygen react new --name home --section pages --type stateful --redux --styles scs
 - `app/<section>/<component_name>/index.jsx` - Code related to react-loadable goes in here
 - `app/<section>/<component_name>/styles.[ext]` - Stylesheet (based on the stylesheet preference)
 - `app/<section>/<component_name>/README.md` - README file for documentation
-- `app/<section>/<component_name>/__spec__/index.js` - Code related to unit test goes here
+- `app/<section>/<component_name>/__tests__/index.js` - Code related to unit test goes here
 - `app/<section>/index.js` - Index file which exports all components. It will get updated automatically when a new component is added. Useful when combined with [webpack alias](https://webpack.js.org/configuration/resolve/#resolve-alias). You can do something like `import { Header, Footer, Profile } from '@components'`
 
 ## Things to remember

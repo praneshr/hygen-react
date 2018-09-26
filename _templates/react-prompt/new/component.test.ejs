@@ -1,5 +1,7 @@
 ---
-to: app/<%= h. inflection.dasherize(section.toLowerCase()) %>/<%= h.inflection.dasherize(name.toLowerCase()) %>/__spec__/index.js
+to: app/<%= h. inflection.dasherize(section.toLowerCase()) %>/<%= h.inflection.dasherize(name.toLowerCase()) %>/__tests__/index.js
 ---
 <% ComponentClassName = h.inflection.camelize(name.split('-').join('_').split(' ').join('_')) -%>
+import React from 'react'
+
 import <%= ComponentClassName %> from '../component.jsx'
