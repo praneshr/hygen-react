@@ -2,7 +2,7 @@
 
 Hygen template package to ease your React and Redux workflow.
 
-![CLI](https://image.ibb.co/feuFKp/ezgif_com_video_to_gif_3.gif)
+![CLI](https://image.ibb.co/hGiv49/ezgif_com_video_to_gif_8.gif)
 
 ## Prerequisites
 - [hygen](https://github.com/jondot/hygen)
@@ -15,7 +15,7 @@ $ hygen-add react
 This will create a `_template` folder in your project root. This contains all the template files. You should commit and push them with your code. You can also modify the template for your need.
 
 ## Usage
-`hygen-react` supports both prompt and basic version of `hygen` generator. Choose whichever fits you.
+`hygen-react` supports both prompt and non-prompt version of `hygen` generator. Choose whichever fits you.
 
 ### 1. With Prompt
 ```bash
@@ -45,12 +45,12 @@ hygen react new --name home --section pages --type stateful --redux --styles scs
 ## Files
 `hygen-react` will create the following files
 
-- `app/<section>/<component_name>/component.jsx` - Code for the component goes in here
+- `app/<section>/<component_name>/component.jsx` - Code related to component goes in here
 - `app/<section>/<component_name>/index.jsx` - Code related to react-loadable goes in here
 - `app/<section>/<component_name>/styles.[ext]` - Stylesheet (based on the stylesheet preference)
 - `app/<section>/<component_name>/README.md` - README file for documentation
-- `app/<section>/<component_name>/__tests__/index.js` - Code related to unit test goes here
-- `app/<section>/index.js` - Index file which exports all components. It will get updated automatically when a new component is added. Useful when combined with [webpack alias](https://webpack.js.org/configuration/resolve/#resolve-alias). You can do something like `import { Header, Footer, Profile } from '@components'`
+- `app/<section>/<component_name>/__tests__/index.js` - Code related to unit test goes in here
+- `app/<section>/index.js` - Index file which exports all components from a section. It will get updated automatically when a new component is added. Useful when combined with [webpack alias](https://webpack.js.org/configuration/resolve/#resolve-alias). You can do something like `import { Header, Footer, Profile } from '@components'`
 
 ## Things to remember
 
