@@ -1,6 +1,6 @@
 {
   "name": "hygen-react",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Hygen templates for project using React, Redux and Emotion",
   "keywords": [
     "code-generator",
